@@ -1,0 +1,27 @@
+[package]
+name = "aperion"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+libp2p-kad = "0.43.1"
+libp2p-identity = "0.1.1"
+libp2p-tcp = {version = "0.39.0", features=["async-io"]}
+libp2p-mplex = "0.39.0"
+libp2p-core = "0.39.1"
+libp2p-noise = "0.42.1"
+libp2p-gossipsub = {version="0.44.1"}
+libp2p-swarm = {version = "0.42.0", features=["macros", "async-std"]}
+libp2p = "0.51.1"
+tokio = "1.26.0"
+async-std = {version = "1.12.0", features=["attributes", "async-io"]}
+
+log = "0.4.17"
+env_logger = "0.10.0"
+
+event-bus = "0.1.0"
+
+clap = {version = "4.1.13", features=["derive"]}
+syn = "2.0.10"
